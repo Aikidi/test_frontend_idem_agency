@@ -1,0 +1,86 @@
+.page {
+  margin: 0;
+  min-width: 320px;
+  background-color: @page-background-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page-wrapper {  
+  min-height: 100vh;  
+  min-width: 320px;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: @white;  
+}
+
+.page-header {
+  min-height: 90px;
+  background-color: @gray;  
+  padding-top: 30px;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.page-header__title {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.page-footer__title {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+  padding-top: 10px;
+
+  @media (min-width: 480px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.page-main__content-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 155px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.page-main__content-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: auto;
+  font-weight: normal;
+}
+
+.page-footer {
+  min-height: 90px;
+  background-color: @gray;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.button-unstyled {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
